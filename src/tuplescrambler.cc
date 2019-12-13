@@ -100,7 +100,7 @@ int main(int argc, char *argv[]) {
 	vector<int> entries;
 	INSERT_ELEMENTS(entries,0,total-1);
 	MyRandom rd;
-	random_shuffle (entries.begin(), entries.end(),rd);
+	std::random_shuffle (entries.begin(), entries.end(),rd);
 	std::vector<int>::iterator it = entries.begin();
 	UInt_t i = 0, pc =0, k=0;
 	while( it != entries.end() ) {
